@@ -21,17 +21,17 @@ echo "Grupos criados"
 
 echo "Criando usuarios"
 
-useradd -c "ADM" -s /bin/bash -p$(openssl passwd senha123) -G GRP_ADM -e carlos
-useradd -c "ADM" -s /bin/bash -p$(openssl passwd senha123) -G GRP_ADM -e maria
-useradd -c "ADM" -s /bin/bash -p$(openssl passwd senha123) -G GRP_ADM -e joao
+useradd carlos -c "ADM" -s /bin/bash -p$(openssl passwd senha123) -G GRP_ADM -e
+useradd maria -c "ADM" -s /bin/bash -p$(openssl passwd senha123) -G GRP_ADM -e
+useradd joao -c "ADM" -s /bin/bash -p$(openssl passwd senha123) -G GRP_ADM -e
 
-useradd -c "Vendas" -s /bin/bash -p$(openssl passwd senha123) -G GRP_VEN -e debora
-useradd -c "Vendas" -s /bin/bash -p$(openssl passwd senha123) -G GRP_VEN -e sebastiana
-useradd -c "Vendas" -s /bin/bash -p$(openssl passwd senha123) -G GRP_VEN -e roberto
+useradd debora -c "Vendas" -s /bin/bash -p$(openssl passwd senha123) -G GRP_VEN -e
+useradd sebastiana -c "Vendas" -s /bin/bash -p$(openssl passwd senha123) -G GRP_VEN -e
+useradd roberto -c "Vendas" -s /bin/bash -p$(openssl passwd senha123) -G GRP_VEN -e
 
-useradd -c "Sec" -s /bin/bash -p$(openssl passwd senha123) -G GRP_SEC -e josefina
-useradd -c "Sec" -s /bin/bash -p$(openssl passwd senha123) -G GRP_SEC -e amanda
-useradd -c "Sec" -s /bin/bash -p$(openssl passwd senha123) -G GRP_SEC -e rogerio
+useradd josefina -c "Sec" -s /bin/bash -p$(openssl passwd senha123) -G GRP_SEC -e
+useradd amanda -c "Sec" -s /bin/bash -p$(openssl passwd senha123) -G GRP_SEC -e
+useradd rogerio -c "Sec" -s /bin/bash -p$(openssl passwd senha123) -G GRP_SEC -e
 
 echo "Usuarios criados"
 
